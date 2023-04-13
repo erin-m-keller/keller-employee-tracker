@@ -1,4 +1,4 @@
-  # Readme Generator
+  # Node.js Employee Database Manager
   
   ## Description 
   This application was created with [Node.js](https://nodejs.org/en), [Node.js File System Module](https://www.w3schools.com/nodejs/nodejs_filesystem.asp), and [Inquirer](https://www.npmjs.com/package/inquirer). This application manages a company's employee database.
