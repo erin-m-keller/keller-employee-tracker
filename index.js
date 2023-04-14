@@ -1,5 +1,18 @@
 // initialize variables
-const inquirer = require('inquirer');
+const inquirer = require('inquirer'),
+      mysql = require('mysql2');
+
+const connection = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: 'password',
+});
+
+// connect to the database
+connection.connect((error) => {
+    if (error) throw error;
+    console.log('Connected to MySQL server.');
+});
 
 // Create the prompts
 const questions = () => {
