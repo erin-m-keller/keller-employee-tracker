@@ -88,7 +88,7 @@
 
   ## Outside Resources
 
-  * // TODO: Add any outside resources here
+  * [ChatGPT](https://openai.com/blog/chatgpt): Used ChatGPT to generate the dummy data for [seed.sql](./seed.sql)
   
   ## Questions
   If you have any questions about this project, please contact me directly at [aestheticartist@gmail.com](aestheticartist@gmail.com).  
