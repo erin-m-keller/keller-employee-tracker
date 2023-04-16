@@ -3,7 +3,6 @@
 
 -- Insert the following items
 -- INSERT INTO companyDepartments(dept,dept_id)
--- TODO: create department names and department IDs
 ("Software Development",000001),
 ("Systems Engineering",000002),
 ("Network Operations",000003),
@@ -27,8 +26,7 @@
 
 
 -- Insert the following items
--- INSERT INTO companyRoles(title,salary,dept_id)
--- TODO: create roles: role id, role title, salary, department ID
+-- INSERT INTO companyRoles(id,title,salary,dept_id)
 (1, "Software Engineer", 100000, 000001),
 (2, "Frontend Developer", 95000, 000001),
 (3, "Backend Developer", 105000, 000001),
@@ -130,10 +128,9 @@
 (99, "Custodial Supervisor", 60000, 000020),
 (100, "Building Engineer", 80000, 000020);
 
--- Insert the following items 
--- INSERT INTO employees(first,last,role_id,mgr_id)
+-- Insert the following employees 
+-- INSERT INTO employeeDirectory(first_name,last_name,role_id,mgr_id)
 -- VALUES
--- TODO: create employees: first name, last name, role id, manager id
 ("James", "Smith", 1, 100001),
 ("Emily", "Davis", 2, 100001),
 ("William", "Wilson", 3, 100001),
