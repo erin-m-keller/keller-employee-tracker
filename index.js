@@ -75,7 +75,7 @@ function terminalPrompt() {
                 break;
             }
             case 'emp_by_mgr': {
-                console.info('View Employees by Manager - TODO (bonus)');
+                employeeClass.viewEmployeesByManager(terminalPrompt);
                 break;
             }
             case 'emp_by_dept': {
