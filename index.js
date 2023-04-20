@@ -41,7 +41,7 @@ connection.connect((err) => {
 const applicationPrompts = () => {
     return inquirer.prompt([
         {
-            name: "action",
+            name: "selectedTask",
             type: "list",
             message: "What would you like to do?",
             choices: [
@@ -69,7 +69,7 @@ function terminalPrompt() {
     console.log('\x1b[31m%s\x1b[0m',asciiArt);
     applicationPrompts().then(response => {
         let employeeClass = new Employee();
-        switch (response.action) {
+        switch (response.selectedTask) {
             case 'all_emp': {
                 employeeClass.viewAllEmployees(terminalPrompt);
                 break;
