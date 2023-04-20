@@ -5,13 +5,14 @@ const inquirer = require('inquirer'),
 const connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'password',
+    password: 'mD43##eaf^7uy!',
+    database: 'company_directory'
 });
 
 // connect to the database
 connection.connect((error) => {
     if (error) throw error;
-    console.log('Connected to MySQL server.');
+    console.log(`Connected to : &{connection.database}`);
 });
 
 // Create the prompts
@@ -36,14 +37,14 @@ const validateInput = async (input) => {
 };
 
 function init() {
-    questions().then(answers => {
+    //questions().then(answers => {
         // do something
-    }).then(data => {
+    //}).then(data => {
         // do something
-    }).catch(err => {
+    //}).catch(err => {
         // console log the error
-        console.log("Error: " + err)
-    });
+        //console.log("Error: " + err)
+    //});
 }
 
 // initialize the application

@@ -66,13 +66,11 @@
   ```
   * Install the dependencies.
   ``` bash
-    npm i
+    Install [MySQL](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/)
+    Start the server: - mysql -u root -p 
+    Enter the password
   ```
-  * Start the application.
-  ``` bash
-    npm start
-  ```
-  > Answer the prompts
+  > Access the database through the CLI Terminal
   
   ## Usage
   
