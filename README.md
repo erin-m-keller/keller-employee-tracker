@@ -88,6 +88,11 @@
   ``` bash
     SOURCE seed.sql
   ```
+
+  Create an .env file in the root directory and set your local MySQL server password
+  ``` bash
+    DB_PASSWORD = "your_password_here"
+  ```
   > Access the database through the CLI Terminal
   
   ## Usage
