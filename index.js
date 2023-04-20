@@ -46,7 +46,7 @@ const applicationPrompts = () => {
             message: "What would you like to do?",
             choices: [
                 { name: "View All Employees", value: "all_emp"},
-                { name: "View Employees by Manager (bonus)", value: "emp_by_mgr"},
+                { name: "View Employees by Manager", value: "emp_by_mgr"},
                 { name: "View Employees by Department (bonus)", value: "emp_by_dept"},
                 { name: "Add Employee", value: "add_emp"},
                 { name: "Delete Employee (bonus)", value: "delete_emp"},
