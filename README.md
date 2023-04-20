@@ -67,7 +67,7 @@
   * Install the dependencies.
     * Install [MySQL](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/)
 
-  Start the server in the terminal
+  Start the server in the terminal (ensure you are in the root directory)
 
   ``` bash
     - mysql -u root -p 
