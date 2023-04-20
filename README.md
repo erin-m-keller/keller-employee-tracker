@@ -72,6 +72,19 @@
     // TODO: enter SOURCE schema.sql (to generate the database)
     Enter: SOURCE seed.sql
   ```
+    ``` bash
+    Enter the password to start the server
+  ```
+
+  Once MySQL server has started, create the database
+    ``` bash
+    // TODO: SOURCE schema.sql (to generate the database)
+  ```
+
+  SEED the database with data
+    ``` bash
+    SOURCE seed.sql 
+  ```
   > Access the database through the CLI Terminal
   
   ## Usage
