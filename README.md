@@ -67,27 +67,26 @@
   * Install the dependencies.
     * Install [MySQL](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/)
 
-  ``` bash
-    Start the server in the terminal: - mysql -u root -p 
-    Enter the password
-    // TODO: enter SOURCE schema.sql (to generate the database)
-    Enter: SOURCE seed.sql
-  ```
+  Start the server in the terminal
 
   ``` bash
-    Enter the password to start the server
+    - mysql -u root -p 
+  ```
+
+  Enter the password
+  ``` bash
+    password_goes_here
   ```
 
   Once MySQL server has started, create the database
 
   ``` bash
-    // TODO: SOURCE schema.sql (to generate the database)
+    SOURCE schema.sql 
   ```
 
-  SEED the database with data
-
+  Populate the database with data
   ``` bash
-    SOURCE seed.sql 
+    SOURCE seed.sql
   ```
   > Access the database through the CLI Terminal
   
