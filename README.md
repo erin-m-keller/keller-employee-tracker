@@ -89,6 +89,11 @@
     SOURCE seed.sql
   ```
 
+  Exit the MySQL server
+  ``` bash
+    exit OR quit
+  ```
+
   Create an .env file in the root directory and set your local MySQL server username and password
   > Don't worry, it will only be saved to your local machine. The .env file is in .gitignore
   ``` bash
