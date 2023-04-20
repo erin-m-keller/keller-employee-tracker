@@ -69,6 +69,8 @@
   ``` bash
     Start the server in the terminal: - mysql -u root -p 
     Enter the password
+    // TODO: enter SOURCE schema.sql (to generate the database)
+    Enter: SOURCE seed.sql
   ```
   > Access the database through the CLI Terminal
   
