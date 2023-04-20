@@ -59,15 +59,15 @@
   ```
   
   ## Installation 
-  * Ensure you are running Node.js v16.  
   * Clone the repository.
   ```
     git clone git@github.com:erin-m-keller/keller-employee-tracker.git
   ```
   * Install the dependencies.
+    * Install [MySQL](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/)
+
   ``` bash
-    Install [MySQL](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/)
-    Start the server: - mysql -u root -p 
+    Start the server in the terminal: - mysql -u root -p 
     Enter the password
   ```
   > Access the database through the CLI Terminal
