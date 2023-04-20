@@ -84,7 +84,7 @@
     SOURCE schema.sql 
   ```
 
-  Populate the database with data
+  Seed the database with data
   ``` bash
     SOURCE seed.sql
   ```
