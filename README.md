@@ -90,6 +90,7 @@
   ```
 
   Create an .env file in the root directory and set your local MySQL server password
+  > Don't worry, it will only be saved to your local machine. The .env file is in .gitignore
   ``` bash
     DB_PASSWORD = "your_password_here"
   ```

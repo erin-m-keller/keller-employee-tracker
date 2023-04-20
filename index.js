@@ -79,7 +79,7 @@ function terminalPrompt() {
                 break;
             }
             case 'emp_by_dept': {
-                console.info('View Employees by Department - TODO (bonus)');
+                employeeClass.viewEmployeesByDept(terminalPrompt);
                 break;
             }
             case 'add_emp': {
