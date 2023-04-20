@@ -89,9 +89,10 @@
     SOURCE seed.sql
   ```
 
-  Create an .env file in the root directory and set your local MySQL server password
+  Create an .env file in the root directory and set your local MySQL server username and password
   > Don't worry, it will only be saved to your local machine. The .env file is in .gitignore
   ``` bash
+    DB_USER = "your_username_here"
     DB_PASSWORD = "your_password_here"
   ```
   > Access the database through the CLI Terminal
