@@ -1,18 +1,20 @@
-// initialize variables
-const inquirer = require('inquirer'),
-      mysql = require('mysql2');
+require('dotenv').config()
+const mysql = require('mysql2'),
+      inquirer = require('inquirer');
 
 const connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'mD43##eaf^7uy!',
-    database: 'company_directory'
+    password: process.env.DB_PASSWORD,
+    database: 'employees_db'
 });
 
-// connect to the database
-connection.connect((error) => {
-    if (error) throw error;
-    console.log(`Connected to : &{connection.database}`);
+connection.connect((err) => {
+    if (err) {
+        console.error(`Error connecting to ${connection.config.database} database:` + err.stack);
+        return;
+    }
+    console.log(`Connected to ${connection.config.database} database.`);
 });
 
 // Create the prompts
@@ -22,17 +24,15 @@ const questions = () => {
             type: 'input',
             name: 'title',
             message: 'What would you like the title to be for your application?',
-            validate: validateInput // validate the input is not empty
+            validate: validateInput 
         }
     ])
 };
 
 const validateInput = async (input) => {
-    // if input has data, return true
     if (input) {
         return true;
     } 
-    // else display a message to the user
     return 'You must enter the information.';
 };
 
