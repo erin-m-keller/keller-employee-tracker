@@ -63,6 +63,7 @@
   ```
     git clone git@github.com:erin-m-keller/keller-employee-tracker.git
   ```
+
   * Install the dependencies.
     * Install [MySQL](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/)
 
@@ -72,17 +73,20 @@
     // TODO: enter SOURCE schema.sql (to generate the database)
     Enter: SOURCE seed.sql
   ```
-    ``` bash
+
+  ``` bash
     Enter the password to start the server
   ```
 
   Once MySQL server has started, create the database
-    ``` bash
+
+  ``` bash
     // TODO: SOURCE schema.sql (to generate the database)
   ```
 
   SEED the database with data
-    ``` bash
+
+  ``` bash
     SOURCE seed.sql 
   ```
   > Access the database through the CLI Terminal
