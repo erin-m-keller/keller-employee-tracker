@@ -2,6 +2,7 @@ require('dotenv').config()
 const connection = require('./lib/db'),
       inquirer = require('inquirer'),
       Employee = require('./lib/employee'),
+      Department = require('./lib/department'),
       asciiArt = `
         .-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-.
         |                                                                            |
@@ -68,7 +69,8 @@ const applicationPrompts = () => {
 function terminalPrompt() {
     console.log('\x1b[31m%s\x1b[0m',asciiArt);
     applicationPrompts().then(response => {
-        let employeeClass = new Employee();
+        let employeeClass = new Employee(),
+            departmentClass = new Department();
         switch (response.selectedTask) {
             case 'all_emp': {
                 employeeClass.viewAllEmployees(terminalPrompt);
@@ -111,7 +113,7 @@ function terminalPrompt() {
                 break;
             }
             case 'all_depts': {
-                console.info('View All Departments - TODO');
+                departmentClass.viewAllDepartments(terminalPrompt);
                 break;
             }
             case 'add_dept': {

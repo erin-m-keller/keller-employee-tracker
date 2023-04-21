@@ -3,26 +3,26 @@ USE employees_db;
 -- Insert the following items
 INSERT INTO departments(id,name)
 VALUES
-(1,"Software Development"),
-(2,"Systems Engineering"),
-(3,"Network Operations"),
-(4,"Information Security"),
-(5,"Quality Assurance"),
-(6,"Cloud Computing"),
-(7,"User Experience (UX)"),
-(8,"Project Management"),
-(9,"Data Science & Analytics"),
-(10,"Product Design"),
-(11,"Artificial Intelligence (AI)"),
-(12,"DevOps"),
-(13,"Technical Writing"),
-(14,"Business Analysis"),
-(15,"Sales & Marketing"),
-(16,"Customer Support"),
-(17,"Human Resources (HR)"),
-(18,"Finance & Accounting"),
-(19,"Legal & Compliance"),
-(20,"Facilities & Maintenance");
+("Software Development"),
+("Systems Engineering"),
+("Network Operations"),
+("Information Security"),
+("Quality Assurance"),
+("Cloud Computing"),
+("User Experience (UX)"),
+("Project Management"),
+("Data Science & Analytics"),
+("Product Design"),
+("Artificial Intelligence (AI)"),
+("DevOps"),
+("Technical Writing"),
+("Business Analysis"),
+("Sales & Marketing"),
+("Customer Support"),
+("Human Resources (HR)"),
+("Finance & Accounting"),
+("Legal & Compliance"),
+("Facilities & Maintenance");
 
 -- Insert the following items
 INSERT INTO roles(id,title,salary,department_id)

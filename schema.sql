@@ -9,7 +9,7 @@ USE employees_db;
 SELECT DATABASE();
 
 CREATE TABLE departments (
-    id INT NOT NULL PRIMARY KEY,
+    id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
     name VARCHAR(30) NOT NULL
 );
 
