@@ -36,12 +36,13 @@ connection.connect((err) => {
         return;
     }
     console.log(`Successfully connected to ${connection.config.database} database.`);
+    console.log('\x1b[35m%s\x1b[0m',asciiArt);
     terminalPrompt();
 });
 
 // Create the prompts
-const applicationPrompts = () => {
-    return inquirer.prompt([
+const menuPrompts = () => {
+    let menuPrompt = [
         {
             name: "selectedTask",
             type: "list",
@@ -50,7 +51,7 @@ const applicationPrompts = () => {
                 { name: "\x1b[33mView All Employees*\x1b[0m", value: "all_emp"},
                 { name: "\x1b[33mView Employees by Manager*\x1b[0m", value: "emp_by_mgr"},
                 { name: "\x1b[33mView Employees by Department*\x1b[0m", value: "emp_by_dept"},
-                { name: "\x1b[32mAdd Employee\x1b[0m", value: "add_emp"},
+                { name: "\x1b[32mAdd Employee*\x1b[0m", value: "add_emp"},
                 { name: "\x1b[32mDelete Employee (bonus)\x1b[0m", value: "delete_emp"},
                 { name: "\x1b[32mUpdate Employee Role\x1b[0m", value: "update_emp_role"},
                 { name: "\x1b[32mUpdate Employee Manager (bonus)\x1b[0m", value: "update_emp_mgr"},
@@ -59,17 +60,17 @@ const applicationPrompts = () => {
                 { name: "\x1b[32mDelete Role (bonus)\x1b[0m", value: "delete_role"},
                 { name: "\x1b[33mView All Departments\x1b[0m", value: "all_depts"},
                 { name: "\x1b[32mAdd Department\x1b[0m", value: "add_dept"},
-                { name: "\x1b[32mDelete Department (bonus)\x1b[0m", value: "delete_dpt"},
+                { name: "\x1b[32mDelete Department (bonus)\x1b[0m", value: "delete_dept"},
                 { name: "\x1b[31mExit\x1b[0m", value: "exit"},
             ]
             
         }
-    ])
+    ]
+    return inquirer.prompt(menuPrompt);
 };
 
 function terminalPrompt() {
-    console.log('\x1b[35m%s\x1b[0m',asciiArt);
-    applicationPrompts().then(response => {
+    menuPrompts().then(response => {
         let employeeClass = new Employees(),
             departmentClass = new Departments(),
             roleClass = new Roles();
@@ -87,7 +88,7 @@ function terminalPrompt() {
                 break;
             }
             case 'add_emp': {
-                console.info('Add Employee - TODO');
+                employeeClass.addEmployee(terminalPrompt);
                 break;
             }
             case 'delete_emp': {
@@ -122,7 +123,7 @@ function terminalPrompt() {
                 console.info('Add Department - TODO');
                 break;
             }
-            case 'delete_dpt': {
+            case 'delete_dept': {
                 console.info('Delete Department - TODO (bonus)');
                 break;
             }
