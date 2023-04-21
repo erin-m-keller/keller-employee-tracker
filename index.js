@@ -48,7 +48,7 @@ const applicationPrompts = () => {
             choices: [
                 { name: "\x1b[33mView All Employees*\x1b[0m", value: "all_emp"},
                 { name: "\x1b[33mView Employees by Manager*\x1b[0m", value: "emp_by_mgr"},
-                { name: "\x1b[33mView Employees by Department (bonus)\x1b[0m", value: "emp_by_dept"},
+                { name: "\x1b[33mView Employees by Department*\x1b[0m", value: "emp_by_dept"},
                 { name: "\x1b[32mAdd Employee\x1b[0m", value: "add_emp"},
                 { name: "\x1b[32mDelete Employee (bonus)\x1b[0m", value: "delete_emp"},
                 { name: "\x1b[32mUpdate Employee Role\x1b[0m", value: "update_emp_role"},
