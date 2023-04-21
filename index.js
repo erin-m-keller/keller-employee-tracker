@@ -100,7 +100,7 @@ function terminalPrompt() {
                 break;
             }
             case 'update_emp_mgr': {
-                console.info('Update Employee Manager - TODO (bonus)');
+                employeeClass.updateEmployeeManager(terminalPrompt);
                 break;
             }
             case 'all_roles': {
