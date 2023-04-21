@@ -135,7 +135,7 @@ VALUES
 ("Emily", "Davis", 2, 5),
 ("William", "Wilson", 3, 5),
 ("Sophia", "Brown", 4, 5),
-("Daniel", "Johnson", 5, 5),
+("Daniel", "Johnson", 5, 2),
 ("Robert", "Garcia", 6, 2),
 ("Olivia", "Lopez", 7, 2),
 ("Michael", "Ramirez", 8, 2),
