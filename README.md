@@ -8,6 +8,7 @@
   * [User Story](#user-story)
   * [Acceptance Criteria](#acceptance-criteria)
   * [Installation](#installation)
+  * [Screenshot](#screenshot)
   * [Usage](#usage)
   * [License](#license)
   * [Contributors](#contributors)
@@ -102,6 +103,10 @@
     DB_PASSWORD = "your_password_here"
   ```
   > Access the database through the CLI Terminal
+
+  ## Screenshot
+
+  ![NodeScreen](./assets/images/finished-product.png)
   
   ## Usage
   
