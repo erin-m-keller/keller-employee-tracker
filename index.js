@@ -52,7 +52,7 @@ const menuPrompts = () => {
                 { name: "\x1b[33mView Employees by Manager*\x1b[0m", value: "emp_by_mgr"},
                 { name: "\x1b[33mView Employees by Department*\x1b[0m", value: "emp_by_dept"},
                 { name: "\x1b[32mAdd Employee*\x1b[0m", value: "add_emp"},
-                { name: "\x1b[32mDelete Employee (bonus)\x1b[0m", value: "delete_emp"},
+                { name: "\x1b[32mDelete Employee*\x1b[0m", value: "delete_emp"},
                 { name: "\x1b[32mUpdate Employee Role\x1b[0m", value: "update_emp_role"},
                 { name: "\x1b[32mUpdate Employee Manager (bonus)\x1b[0m", value: "update_emp_mgr"},
                 { name: "\x1b[33mView All Roles*\x1b[0m", value: "all_roles"},
@@ -92,11 +92,11 @@ function terminalPrompt() {
                 break;
             }
             case 'delete_emp': {
-                console.info('Delete Employee - TODO (bonus)');
+                employeeClass.deleteEmployee(terminalPrompt);
                 break;
             }
             case 'update_emp_role': {
-                console.info('Update Employee Role - TODO');
+                employeeClass.updateEmployeeRole(terminalPrompt);
                 break;
             }
             case 'update_emp_mgr': {
