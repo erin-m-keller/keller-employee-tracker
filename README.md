@@ -102,7 +102,11 @@
     DB_USER = "your_username_here"
     DB_PASSWORD = "your_password_here"
   ```
-  > Access the database through the CLI Terminal
+  Start the application
+   ``` bash
+    npm start
+  ```
+  > You'll be presented with the database interface
 
   ## Screenshot
 
