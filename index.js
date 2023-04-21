@@ -1,9 +1,9 @@
 require('dotenv').config()
 const connection = require('./lib/db'),
       inquirer = require('inquirer'),
-      Employees = require('./lib/employees'),
-      Departments = require('./lib/departments'),
-      Roles = require('./lib/roles'),
+      Employee = require('./lib/employee'),
+      Department = require('./lib/department'),
+      Role = require('./lib/role'),
       asciiArt = `
         .-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-.
         |                                                                            |
@@ -71,9 +71,9 @@ const menuPrompts = () => {
 
 function terminalPrompt() {
     menuPrompts().then(response => {
-        let employeeClass = new Employees(),
-            departmentClass = new Departments(),
-            roleClass = new Roles();
+        let employeeClass = new Employee(),
+            departmentClass = new Department(),
+            roleClass = new Role();
         switch (response.selectedTask) {
             case 'all_emp': {
                 employeeClass.viewAllEmployees(terminalPrompt);
@@ -108,7 +108,7 @@ function terminalPrompt() {
                 break;
             }
             case 'add_role': {
-                console.info('Add Role - TODO');
+                roleClass.addRole(terminalPrompt);
                 break;
             }
             case 'delete_role': {
