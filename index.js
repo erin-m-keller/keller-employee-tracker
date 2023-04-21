@@ -1,8 +1,9 @@
 require('dotenv').config()
 const connection = require('./lib/db'),
       inquirer = require('inquirer'),
-      Employee = require('./lib/employee'),
-      Department = require('./lib/department'),
+      Employees = require('./lib/employees'),
+      Departments = require('./lib/departments'),
+      Roles = require('./lib/roles'),
       asciiArt = `
         .-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-.
         |                                                                            |
@@ -53,7 +54,7 @@ const applicationPrompts = () => {
                 { name: "\x1b[32mDelete Employee (bonus)\x1b[0m", value: "delete_emp"},
                 { name: "\x1b[32mUpdate Employee Role\x1b[0m", value: "update_emp_role"},
                 { name: "\x1b[32mUpdate Employee Manager (bonus)\x1b[0m", value: "update_emp_mgr"},
-                { name: "\x1b[33mView All Roles\x1b[0m", value: "all_roles"},
+                { name: "\x1b[33mView All Roles*\x1b[0m", value: "all_roles"},
                 { name: "\x1b[32mAdd Role\x1b[0m", value: "add_role"},
                 { name: "\x1b[32mDelete Role (bonus)\x1b[0m", value: "delete_role"},
                 { name: "\x1b[33mView All Departments\x1b[0m", value: "all_depts"},
@@ -69,8 +70,9 @@ const applicationPrompts = () => {
 function terminalPrompt() {
     console.log('\x1b[35m%s\x1b[0m',asciiArt);
     applicationPrompts().then(response => {
-        let employeeClass = new Employee(),
-            departmentClass = new Department();
+        let employeeClass = new Employees(),
+            departmentClass = new Departments(),
+            roleClass = new Roles();
         switch (response.selectedTask) {
             case 'all_emp': {
                 employeeClass.viewAllEmployees(terminalPrompt);
@@ -101,7 +103,7 @@ function terminalPrompt() {
                 break;
             }
             case 'all_roles': {
-                console.info('View All Roles - TODO');
+                roleClass.viewAllRoles(terminalPrompt);
                 break;
             }
             case 'add_role': {
