@@ -18,6 +18,7 @@
 
 ![javaScript](https://img.shields.io/badge/-JavaScript-61DAFB?color=red&style=flat)
 ![nodeJS](https://img.shields.io/badge/-Node.js-61DAFB?color=orange&style=flat)
+![mySql](https://img.shields.io/badge/-MySQL-61DAFB?color=yellow&style=flat)
 
   ## User Story
   ```md
