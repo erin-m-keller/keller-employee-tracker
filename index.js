@@ -76,31 +76,31 @@ function terminalPrompt() {
             roleClass = new Role();
         switch (response.selectedTask) {
             case 'all_emp': {
-                employeeClass.viewAllEmployees(terminalPrompt);
+                employeeClass.viewAllEmp(terminalPrompt);
                 break;
             }
             case 'emp_by_mgr': {
-                employeeClass.viewEmployeesByManager(terminalPrompt);
+                employeeClass.viewEmpByMgr(terminalPrompt);
                 break;
             }
             case 'emp_by_dept': {
-                employeeClass.viewEmployeesByDept(terminalPrompt);
+                employeeClass.viewEmpByDept(terminalPrompt);
                 break;
             }
             case 'add_emp': {
-                employeeClass.addEmployee(terminalPrompt);
+                employeeClass.addEmp(terminalPrompt);
                 break;
             }
             case 'delete_emp': {
-                employeeClass.deleteEmployee(terminalPrompt);
+                employeeClass.deleteEmp(terminalPrompt);
                 break;
             }
             case 'update_emp_role': {
-                employeeClass.updateEmployeeRole(terminalPrompt);
+                employeeClass.updateEmpRole(terminalPrompt);
                 break;
             }
             case 'update_emp_mgr': {
-                employeeClass.updateEmployeeManager(terminalPrompt);
+                employeeClass.updateEmpMgr(terminalPrompt);
                 break;
             }
             case 'all_roles': {
@@ -116,15 +116,15 @@ function terminalPrompt() {
                 break;
             }
             case 'all_depts': {
-                departmentClass.viewAllDepartments(terminalPrompt);
+                departmentClass.viewAllDept(terminalPrompt);
                 break;
             }
             case 'add_dept': {
-                departmentClass.addDepartment(terminalPrompt);
+                departmentClass.addDept(terminalPrompt);
                 break;
             }
             case 'delete_dept': {
-                console.info('Delete Department - TODO (bonus)');
+                departmentClass.deleteDept(terminalPrompt);
                 break;
             }
             case 'exit': {
