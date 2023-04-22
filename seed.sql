@@ -1,7 +1,7 @@
 USE employees_db;
 
 -- Insert the following items
-INSERT INTO departments(id,name)
+INSERT INTO departments(name)
 VALUES
 ("Software Development"),
 ("Systems Engineering"),

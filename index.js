@@ -120,7 +120,7 @@ function terminalPrompt() {
                 break;
             }
             case 'add_dept': {
-                console.info('Add Department - TODO');
+                departmentClass.addDepartment(terminalPrompt);
                 break;
             }
             case 'delete_dept': {
