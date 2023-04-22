@@ -128,13 +128,7 @@ function terminalPrompt() {
                 break;
             }
             case 'exit': {
-                let banner = `
-                    .-.     .-.     .-.     .-.     .-.     .-.     .-.     .-.     .-. 
-                    thank\d.you.\othank\t.you.\dthank\o.you.\tthank\d.you.\othank\t.you.\
-                   .-'    `-'     `-'     `-'     `-'     `-'     `-'     `-'     `-'  `-.
-                `;
                 connection.end();
-                console.log('\x1b[35m%s\x1b[0m',banner);
                 console.log('\x1b[35m%s\x1b[0m','Thank you for using the Employee Database Manager!');
                 break;
             }
