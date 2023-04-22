@@ -44,24 +44,24 @@ connection.connect((err) => {
 const menuPrompts = () => {
     let menuPrompt = [
         {
-            name: "selectedTask",
-            type: "list",
-            message: "What would you like to do?",
+            name: 'selectedTask',
+            type: 'list',
+            message: 'What would you like to do?',
             choices: [
-                { name: "\x1b[33mView All Employees\x1b[0m", value: "all_emp"},
-                { name: "\x1b[33mView Employees by Manager\x1b[0m", value: "emp_by_mgr"},
-                { name: "\x1b[33mView Employees by Department\x1b[0m", value: "emp_by_dept"},
-                { name: "\x1b[32mAdd Employee\x1b[0m", value: "add_emp"},
-                { name: "\x1b[32mDelete Employee\x1b[0m", value: "delete_emp"},
-                { name: "\x1b[32mUpdate Employee Role\x1b[0m", value: "update_emp_role"},
-                { name: "\x1b[32mUpdate Employee Manager\x1b[0m", value: "update_emp_mgr"},
-                { name: "\x1b[33mView All Roles\x1b[0m", value: "all_roles"},
-                { name: "\x1b[32mAdd Role\x1b[0m", value: "add_role"},
-                { name: "\x1b[32mDelete Role\x1b[0m", value: "delete_role"},
-                { name: "\x1b[33mView All Departments\x1b[0m", value: "all_depts"},
-                { name: "\x1b[32mAdd Department\x1b[0m", value: "add_dept"},
-                { name: "\x1b[32mDelete Department\x1b[0m", value: "delete_dept"},
-                { name: "\x1b[31mExit\x1b[0m", value: "exit"},
+                { name: '\x1b[33mView All Employees\x1b[0m', value: 'all_emp'},
+                { name: '\x1b[33mView Employees by Manager\x1b[0m', value: 'emp_by_mgr'},
+                { name: '\x1b[33mView Employees by Department\x1b[0m', value: 'emp_by_dept'},
+                { name: '\x1b[32mAdd Employee\x1b[0m', value: 'add_emp'},
+                { name: '\x1b[32mDelete Employee\x1b[0m', value: 'delete_emp'},
+                { name: '\x1b[32mUpdate Employee Role\x1b[0m', value: 'update_emp_role'},
+                { name: '\x1b[32mUpdate Employee Manager\x1b[0m', value: 'update_emp_mgr'},
+                { name: '\x1b[33mView All Roles\x1b[0m', value: 'all_roles'},
+                { name: '\x1b[32mAdd Role\x1b[0m', value: 'add_role'},
+                { name: '\x1b[32mDelete Role\x1b[0m', value: 'delete_role'},
+                { name: '\x1b[33mView All Departments\x1b[0m', value: 'all_depts'},
+                { name: '\x1b[32mAdd Department\x1b[0m', value: 'add_dept'},
+                { name: '\x1b[32mDelete Department\x1b[0m', value: 'delete_dept'},
+                { name: '\x1b[31mExit\x1b[0m', value: 'exit'},
             ]
             
         }
@@ -128,7 +128,14 @@ function terminalPrompt() {
                 break;
             }
             case 'exit': {
-                console.info('Exit the application - TODO');
+                let banner = `
+                    .-.     .-.     .-.     .-.     .-.     .-.     .-.     .-.     .-. 
+                    thank\d.you.\othank\t.you.\dthank\o.you.\tthank\d.you.\othank\t.you.\
+                   .-'    `-'     `-'     `-'     `-'     `-'     `-'     `-'     `-'  `-.
+                `;
+                connection.end();
+                console.log('\x1b[35m%s\x1b[0m',banner);
+                console.log('\x1b[35m%s\x1b[0m','Thank you for using the Employee Database Manager!');
                 break;
             }
             default:
