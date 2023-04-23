@@ -62,7 +62,7 @@ const menuPrompts = () => {
     // initialize the variables
     let menuPrompt = [
         {
-            name: 'selectedTask',
+            name: 'selectedMenuOption',
             type: 'list',
             message: 'What would you like to do?',
             choices: [
@@ -101,7 +101,7 @@ function terminalPrompts() {
             departmentClass = new Department(),
             roleClass = new Role();
         // switch the functions based on the user input
-        switch (response.selectedTask) {
+        switch (response.selectedMenuOption) {
             // view all employees
             case 'all_emp': {
                 employeeClass.viewAllEmp(terminalPrompts);
