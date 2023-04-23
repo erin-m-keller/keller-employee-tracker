@@ -104,67 +104,67 @@ function terminalPrompts() {
         switch (response.selectedTask) {
             // view all employees
             case 'all_emp': {
-                employeeClass.viewAllEmp(terminalPrompt);
+                employeeClass.viewAllEmp(terminalPrompts);
                 break;
             }
             // view employee by manager
             case 'emp_by_mgr': {
-                employeeClass.viewEmpByMgr(terminalPrompt);
+                employeeClass.viewEmpByMgr(terminalPrompts);
                 break;
             }
             // view employee by department
             case 'emp_by_dept': {
-                employeeClass.viewEmpByDept(terminalPrompt);
+                employeeClass.viewEmpByDept(terminalPrompts);
                 break;
             }
             // add an employee
             case 'add_emp': {
-                employeeClass.addEmp(terminalPrompt);
+                employeeClass.addEmp(terminalPrompts);
                 break;
             }
             // delete an employee
             case 'delete_emp': {
-                employeeClass.deleteEmp(terminalPrompt);
+                employeeClass.deleteEmp(terminalPrompts);
                 break;
             }
             // update employee role
             case 'update_emp_role': {
-                employeeClass.updateEmpRole(terminalPrompt);
+                employeeClass.updateEmpRole(terminalPrompts);
                 break;
             }
             // update employee manager
             case 'update_emp_mgr': {
-                employeeClass.updateEmpMgr(terminalPrompt);
+                employeeClass.updateEmpMgr(terminalPrompts);
                 break;
             }
             // view all roles
             case 'all_roles': {
-                roleClass.viewAllRoles(terminalPrompt);
+                roleClass.viewAllRoles(terminalPrompts);
                 break;
             }
             // add a role
             case 'add_role': {
-                roleClass.addRole(terminalPrompt);
+                roleClass.addRole(terminalPrompts);
                 break;
             }
             // delete a role
             case 'delete_role': {
-                roleClass.deleteRole(terminalPrompt);
+                roleClass.deleteRole(terminalPrompts);
                 break;
             }
             // view all departments
             case 'all_depts': {
-                departmentClass.viewAllDept(terminalPrompt);
+                departmentClass.viewAllDept(terminalPrompts);
                 break;
             }
             // add a department
             case 'add_dept': {
-                departmentClass.addDept(terminalPrompt);
+                departmentClass.addDept(terminalPrompts);
                 break;
             }
             // delete a department
             case 'delete_dept': {
-                departmentClass.deleteDept(terminalPrompt);
+                departmentClass.deleteDept(terminalPrompts);
                 break;
             }
             // exit the application
