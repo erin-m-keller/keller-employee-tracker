@@ -116,7 +116,7 @@
   
   [Watch Video](https://drive.google.com/file/d/1iELxbAFZ1_PYDwMMTFaTdvwde3DP2lkQ/view?usp=sharing)
 
-  > Enjoy the music!
+  > To open in a new tab, use CTRL + click (Windows) or CMD + click (MAC). Enjoy the music!
   
   ## License 
   [![MIT license](https://img.shields.io/badge/License-MIT-purple.svg)](https://lbesson.mit-license.org/)
