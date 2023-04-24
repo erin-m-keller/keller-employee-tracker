@@ -116,7 +116,7 @@
   
   // TODO: Add video walkthrough here
 
-  > Click play to watch the video.
+  > Click play to watch the video. Enjoy the music!
   
   ## License 
   [![MIT license](https://img.shields.io/badge/License-MIT-purple.svg)](https://lbesson.mit-license.org/)
