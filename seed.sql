@@ -1,6 +1,7 @@
+-- select the database to use
 USE employees_db;
 
--- Insert the following items
+-- Insert the following departments
 INSERT INTO departments(name)
 VALUES
 ("Software Development"),
@@ -24,6 +25,7 @@ VALUES
 ("Legal & Compliance"),
 ("Facilities & Maintenance");
 
+-- Insert the following roles
 INSERT INTO roles(title,salary,department_id)
 VALUES
 ("Software Engineer", 100000, 1),
