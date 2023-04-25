@@ -1,7 +1,7 @@
   # Employee Database Manager
   
   ## Description 
-  This application was created with [MySQL](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/), [Node.js](https://nodejs.org/en), [mysql2](https://www.npmjs.com/package/mysql2) and [Inquirer](https://www.npmjs.com/package/inquirer) and it is a content management system (CMS) to manage a company's employee database.
+  This application was created with [MySQL](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/), [Node.js](https://nodejs.org/en), [mysql2](https://www.npmjs.com/package/mysql2) and [Inquirer](https://www.npmjs.com/package/inquirer). It is a content management system (CMS) to manage a company's employee database.
   
   ## Table of Contents
   * [Technology Stack](#technology-stack)
