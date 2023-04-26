@@ -74,7 +74,7 @@
     cd keller-employee-tracker db
   ```
 
-  Start the MySQL server in the terminal (ensure you are in the root directory of the project)
+  Start the MySQL server in the terminal (ensure you are in the db directory of the project)
 
   ``` bash
     - mysql -u root -p 
