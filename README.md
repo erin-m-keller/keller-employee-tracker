@@ -68,6 +68,11 @@
 
   * Install the dependencies.
     * Install [MySQL](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/)
+  
+  * CD into the db directory
+  ```
+    cd keller-employee-tracker db
+  ```
 
   Start the MySQL server in the terminal (ensure you are in the root directory of the project)
 
@@ -94,6 +99,11 @@
   Exit the MySQL server
   ``` bash
     exit OR quit
+  ```
+
+  * Return to the root directory
+  ```
+    cd ..
   ```
 
   Create an .env file in the root directory and set your local MySQL server username and password
